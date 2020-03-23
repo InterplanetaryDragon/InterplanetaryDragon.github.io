@@ -1,0 +1,267 @@
+:root {
+  font-size: 10px;
+  /* for easy math */
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.8rem;
+  color: hsl(230, 11%, 40%);
+  max-width: 1440px;
+  margin: auto;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 50vh;
+  border-radius: 0 0 0 50px;
+  background: hsl(207, 33%, 95%);
+  z-index: -999;
+}
+
+/* headings */
+h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 6rem;
+  color: hsl(230, 29%, 20%);
+  margin-top: 2.5rem;
+}
+
+/* content */
+.shorten {
+  max-width: 290px;
+  color: hsl(230, 29%, 20%);
+  font-size: 1.8rem;
+}
+
+.content>span {
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 2px;
+}
+
+.new {
+  color: hsl(207, 33%, 95%);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  background: hsl(230, 29%, 20%);
+  padding: 0.25em 1em;
+  border-radius: 1em;
+  margin-right: 1em;
+}
+
+/* desktop navigation */
+.menu-checkbox, .close, .hamburger {
+  visibility: hidden;
+}
+
+a {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  margin: auto 2.5rem;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.nav-links {
+  color: hsl(230, 29%, 20%);
+}
+
+.login {
+  color: hsl(231, 7%, 65%);
+}
+
+.dot {
+  color: hsl(231, 7%, 65%);
+  margin: 0 2.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+.hr {}
+
+/* button */
+.button {
+  width: 190px;
+  background: hsl(0, 100%, 68%);
+  border-radius: 0.3em;
+  border: 0;
+  margin: 4rem 1.5rem 0 0;
+  padding: 1.25rem;
+  text-decoration: none;
+  color: hsl(207, 33%, 95%);
+  font-weight: 700;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Grid area and positioning - Desktop */
+.grid {
+  overflow-x:hidden;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  grid-template-areas: "logo nav""content image"
+}
+
+.logo {
+  grid-area: logo;
+  margin: 75px 0 100px 150px;
+}
+
+.nav {
+  grid-area: nav;
+  margin: 75px 0 100px 0px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.content {
+  grid-area: content;
+  margin: 50px 100px 0 150px;
+}
+
+.image {
+  grid-area: image;
+  overflow: hidden;
+  margin: 0 0 0 25px;
+}
+
+/* Mobile */
+@media screen and (max-width: 599px) {
+  .grid {
+    overflow-x:hidden;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "logo nav""image image""content content"
+  }
+
+  .logo {
+    grid-area: logo;
+    margin: 50px 0 75px;
+  }
+
+  .menu-checkbox {
+    position: absolute;
+    right: 0;
+    margin: 50px 5% 0 0;
+    visibility: visible;
+    grid-area: nav;
+    z-index: 4;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+  }
+
+  .hamburger {
+    position: absolute;
+    right: 0;
+    margin: 50px 5% 0 0;
+    visibility: visible;
+    grid-area: nav;
+    z-index: 3
+  }
+
+  .close {
+    position: absolute;
+    right: 0;
+    margin: 50px 5% 0 0;
+    grid-area: nav;
+    visibility: hidden;
+    z-index: 2
+  }
+
+.menu-checkbox:checked ~ .hamburger {
+  visibility: hidden;
+}
+
+.menu-checkbox:checked ~ .close {
+  visibility: visible;
+}
+
+.menu-checkbox:checked ~ .nav {
+  visibility: visible;
+}
+
+.nav {
+    visibility: hidden;
+    grid-area: nav;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    margin: 10rem auto 0;
+    padding: 2rem 0;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 21px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 21px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 21px -8px rgba(0, 0, 0, 0.75);
+    z-index: 10;
+  }
+
+  .content {
+    grid-area: content;
+    margin: 75px 0 0;
+  }
+
+  .image {
+    grid-area: image;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .image img {
+    max-width: 130vw;
+    max-height: auto;
+  }
+
+  li {
+    margin: 1.5rem auto;
+  }
+
+  .dot {
+    visibility: hidden;
+  }
+
+  .hr {
+    margin: auto 2rem 1rem;
+    border-top: 1px solid hsl(231, 7%, 65%);
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  body {
+    padding: 2.5%;
+  }
+
+  body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 70vh;
+    border-radius: 0 0 0 50px;
+    background: hsl(207, 33%, 95%);
+    z-index: -999;
+  }
+
+  /* } end media query */
