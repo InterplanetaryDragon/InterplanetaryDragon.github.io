@@ -1,0 +1,287 @@
+/*content areas */
+body {
+  margin: auto;
+  max-width: 1440px;
+  text-align: center;
+  font-size: 1.125em;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+header {
+  background-image: url(images/bg-header-desktop.png);
+  padding: 100px 0 50px;
+}
+
+footer {
+  background-color: #f7f7f7;
+  padding: 20px 0;
+  margin-top: 100px;
+}
+
+/* paragraphs and headers */
+p {
+  color: hsl(201, 11%, 66%);
+}
+
+.shorten {
+  max-width: 700px;
+  margin: auto;
+}
+
+.left-align {
+  text-align: left;
+}
+
+h1, h2, h3 {
+  color: hsl(210, 10%, 33%);
+  margin-top: 0;
+}
+
+/* links */
+a {
+  font-family: 'Bai Jamjuree', sans-serif;
+  color: hsl(210, 10%, 33%);
+  font-size: 1em;
+  text-decoration: none;
+}
+
+a:hover {
+  color: hsl(171, 66%, 44%);
+}
+
+/* buttons top and bottom */
+.button {
+  width: 275px;
+  margin: 3em 0;
+  padding: 1em 0;
+  font-size: 1em;
+  border-radius: 1.7em;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(38, 186, 164, 0), inset 0px -1px 0px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(38, 186, 164, 0), inset 0px -1px 0px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 0px 0px rgba(38, 186, 164, 0), inset 0px -1px 0px 2px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+}
+
+.button-ios {
+  background: hsla(171, 66%, 44%, 1);
+}
+
+.button-ios:hover {
+  background: hsla(171, 66%, 44%, 0.85);
+}
+
+.button-mac {
+  background: hsla(233, 100%, 69%, 1);
+}
+
+.button-mac:hover {
+  background: hsla(233, 100%, 69%, 0.85);
+}
+
+/* snippets section */
+#snippets {
+  margin: 100px auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 901px) {
+.snippets-flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 75px auto;
+}
+}
+
+@media screen and (min-width: 901px) {
+.snippets-flex-1 {
+  transform: translate(-5%, 0);
+}
+}
+
+@media screen and (min-width: 901px) {
+.snippets-flex-2 {
+  max-width: 375px;
+  margin: 50px 25px;
+}
+}
+
+/* snippets tablet */
+@media screen and (max-width: 900px) {
+  snippets-flex {
+    display: flex;
+    flex-direction: column;
+    margin: 75px auto;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .snippets-flex-1 {
+        transform: translate(0, 0);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .snippets-flex-1>img {
+max-width: 90vw;
+height: auto;
+margin: 50px auto;
+}
+}
+
+@media screen and (max-width: 900px) {
+  .snippets-flex-2 {
+    max-width: 375px;
+    margin: 50px auto;
+  }
+}
+
+/* snippets mobile */
+@media screen and (max-width: 600px) {
+  snippets-flex {
+    display: flex;
+    flex-direction: column;
+    margin: 75px auto;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .snippets-flex-1 {
+    transform: translate(0, 0);
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .snippets-flex-2 {
+    max-width: 375px;
+    margin: 50px auto;
+  }
+}
+
+/* clipboard section */
+#clipboard>img {
+  max-width: 900px;
+  min-width: 375px;
+  margin: 100px auto 25px;
+}
+
+/* supercharge section */
+.supercharge-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.supercharge-flex>div {
+  width: 375px;
+  margin: 25px;
+}
+
+.supercharge-flex>div>img {
+  margin: 25px;
+}
+
+/* tech logos - flex for responsivness */
+.tech-logos {
+  margin: 75px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+}
+
+.tech-logos>div {
+  margin: 25px 25px;
+}
+
+/*footer area*/
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: "sl fl si";
+}
+
+.small-logo {
+  margin: auto;
+  grid-area: sl;
+}
+
+.small-logo>img {
+  width: 40%;
+  height: auto;
+}
+
+.footer-links {
+  grid-area: fl;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-height: 4em;
+}
+
+.footer-links>div {
+  list-style: none;
+  text-align: left;
+  margin: 10px 0 0 0;
+}
+
+.s-icons {
+  grid-area: si;
+  margin: auto;
+}
+
+.s-icons>a {
+  margin: 0px 10px;
+}
+
+/* footer tablet */
+@media screen and (max-width: 900px) {
+  .footer-links {
+    grid-area: fl;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 6em;
+  }
+
+  /* footer mobile */
+  @media screen and (max-width: 600px) {
+    .footer-grid {
+      display: grid;
+      grid-template-rows: 1fr 1.5fr 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "sl""fl""si";
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .footer-links {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 600px) {
+      .footer-links>div {
+        text-align: center;
+        list-style: none;
+        color: hsl(210, 10%, 33%);
+        margin: 0.5em auto;
+      }
+
+      @media screen and (max-width: 600px) {
+        .small-logo {
+          margin: 2em auto;
+        }
+      }
