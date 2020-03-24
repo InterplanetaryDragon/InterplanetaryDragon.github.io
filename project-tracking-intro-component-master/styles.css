@@ -15,6 +15,9 @@ body {
   margin: auto;
 }
 
+.grid>label {
+  visibility: hidden;
+}
 /* body::after {
   content: '';
   position: absolute;
