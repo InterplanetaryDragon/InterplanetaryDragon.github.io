@@ -169,9 +169,9 @@ margin: 50px auto;
 }
 
 /* clipboard section */
+
 #clipboard>img {
-  max-width: 900px;
-  min-width: 375px;
+  width:90%;
   margin: 100px auto 25px;
 }
 
