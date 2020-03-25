@@ -160,7 +160,7 @@ header {
 
 .content-2-content {
   order: 2;
-    margin: 10% 5%;
+  margin: 10% 5%;
 }
 
 .content-2-img {
@@ -180,7 +180,7 @@ header {
   margin: auto;
   padding: 5% 0 0 0;
   max-width: 800px;
-  min-width: 350px;
+  min-width: 250px;
   border-radius: 15px;
   -webkit-box-shadow: 0px 0px 15px -4px rgba(0, 37, 46, 0.16);
   -moz-box-shadow: 0px 0px 15px -4px rgba(0, 37, 46, 0.16);
@@ -205,8 +205,8 @@ footer {
 }
 
 .footer-logo-white {
-    filter:  brightness(0) invert(1);
-    width: calc(12rem + 5vw);
+  filter: brightness(0) invert(1);
+  width: calc(12rem + 5vw);
 }
 
 .footer-logo {
@@ -226,8 +226,8 @@ footer {
   flex: 1;
 }
 
-.footer-links-1>p,.footer-links-2>p {
-line-height: 2.5;
+.footer-links-1>p, .footer-links-2>p {
+  line-height: 2.5;
 }
 
 .footer-links-2 {
@@ -248,7 +248,7 @@ line-height: 2.5;
   display: inline-block;
   margin: 1% 2.5% 0 0;
   width: 2rem;
-  vertical-align:top;
+  vertical-align: top;
 }
 
 .ft-info {
@@ -317,14 +317,13 @@ line-height: 2.5;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 5% 0;
-    padding: 5% 2.5% 5% 10%;
+    padding: 5% 10%;
     border-radius: 15px;
     -webkit-box-shadow: 0px 0px 15px -4px rgba(0, 37, 46, 0.16);
     -moz-box-shadow: 0px 0px 15px -4px rgba(0, 37, 46, 0.16);
     box-shadow: 0px 0px 15px -4px rgba(0, 37, 46, 0.16);
     overflow: auto;
   }
-
 
   .content-1-content, .content-3-content {
     order: 2;
@@ -349,7 +348,6 @@ line-height: 2.5;
 }
 
 /* end header query */
-
 /* Media query for footer - large tablet  */
 @media screen and (max-width: 1100px) {
   .footer-logo {
@@ -384,8 +382,9 @@ line-height: 2.5;
     margin-top: 2.5%;
     text-align: right;
   }
-} /* end footer large tablet query */
+}
 
+/* end footer large tablet query */
 /* Media query for footer - phone and tablet  */
 @media screen and (max-width: 900px) {
   .footer-logo {
@@ -422,4 +421,6 @@ line-height: 2.5;
     margin-top: 2.5%;
     text-align: center;
   }
-} /* end footer phone and tablet query */
+}
+
+/* end footer phone and tablet query */
