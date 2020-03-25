@@ -1,0 +1,163 @@
+/* reset */
+:root {
+  font-size: 10px; /*easier math */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* General styling */
+
+body {
+  font-family: 'Karla', sans-serif;
+  max-width: 1440px;
+  margin: auto;
+  background: #5e5e5e;
+}
+
+h1 {
+font-size: calc(2.2rem + 1.8vw);
+font-weight: 700;
+color: hsl(179, 62%, 43%);
+margin-bottom: 4vh;
+}
+
+h2 {
+font-size: calc(2.2rem + 1.1vw);
+font-weight: 700;
+color: hsl(71, 73%, 54%);
+margin-bottom: 3vh;
+}
+
+h3 {
+font-size: calc(2.0rem + 1vw);
+font-weight: 700;
+color: #fff;
+margin-bottom: 4vh;
+}
+
+button {
+  font-size: calc(1.8rem + 0.2vw);
+  color: #fff;
+  background: hsl(71, 73%, 54%);
+  margin-top: 5vh;
+  padding: 2rem 0;
+  border-style: none;
+  -webkit-box-shadow: 0px 7px 7px 0px hsl(218, 22%, 67%);
+  -moz-box-shadow: 0px 7px 7px 0px hsl(218, 22%, 67%);
+  box-shadow: 0px 7px 7px 0px hsl(218, 22%, 67%);
+  max-width: 50rem;
+}
+
+/* multiple p */
+p {
+    line-height: 1.75;
+}
+
+.p-join {
+  color: hsl(218, 22%, 67%); /*p in main*/
+  font-size: calc(1.8rem + 0.8vw)
+}
+
+.p-subs {
+  color: hsl(204, 43%, 93%); /*p in why?*/
+  font-size: calc(1.8rem + 0.5vw);
+}
+
+.p-why {
+  color: hsl(204, 43%, 93%); /*p in why?*/
+  font-size: calc(1.8rem + 0.2vw);
+}
+
+/* flex elements */
+.container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.join {
+  flex: 1 100%;
+  order: 1;
+  background: #fff;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.subscribe {
+  flex: 1 50%;
+  order: 2;
+  background: hsl(179, 62%, 43%);
+  border-bottom-left-radius: 25px;
+}
+
+.why-us {
+  flex: 1 50%;
+  order: 3;
+  background: hsla(179, 62%, 43%, 0.8);
+  border-bottom-right-radius: 25px;
+}
+
+.join, .subscribe, .why-us {
+padding: 8vmin;
+min-height: 45vh;
+display: flex;
+flex-flow: column wrap;
+}
+
+
+/* inner flex elements */
+.inline {
+height: 25%;
+}
+
+.price {
+  display: inline-block !important;
+  color: #fff;
+  font-size: calc(3rem + 1.8vw);
+  font-weight: 700;
+  vertical-align: middle;
+  margin-right: 2%;
+}
+
+.month {
+  display: inline-block !important;
+  vertical-align: middle;
+}
+
+
+/* media query for smaller devices */
+@media screen and (max-width: 900px) {
+  .container {
+    display: flex;
+  }
+
+  .join {
+    flex: 1 100%;
+    order: 1;
+    background: #fff;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+  }
+
+  .subscribe {
+    flex: 1 100%;
+    order: 2;
+    background: hsl(179, 62%, 43%);
+    border-radius: 0  !important;
+  }
+
+  .why-us {
+    flex: 1 100%;
+    order: 3;
+    background: hsla(179, 62%, 43%, 0.8);
+    border-bottom-left-radius: 25px !important;
+    border-bottom-right-radius: 25px !important;
+  }
+}
