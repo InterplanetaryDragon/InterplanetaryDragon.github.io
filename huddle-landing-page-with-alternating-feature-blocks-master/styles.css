@@ -91,9 +91,9 @@ header {
 .header-btn-1 {
   float: right;
   grid-area: button;
-  width: calc(9rem + 5vw);
+  width: calc(10rem + 5vw);
   background-color: #fff;
-  padding: 3% 0;
+  padding: 2% 0;
 }
 
 .header-content {
