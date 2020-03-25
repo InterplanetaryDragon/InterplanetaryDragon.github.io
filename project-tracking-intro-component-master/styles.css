@@ -13,23 +13,12 @@ body {
   color: hsl(230, 11%, 40%);
   max-width: 1440px;
   margin: auto;
+    overflow: hidden;
 }
 
 .grid>label {
   visibility: hidden;
 }
-/* body::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50vw;
-  height: 50vh;
-  border-radius: 0 0 0 50px;
-  background: hsl(207, 33%, 95%);
-  z-index: -999;
-  overflow: hidden;
-} */
 
 .grid::before {
   content: "";
