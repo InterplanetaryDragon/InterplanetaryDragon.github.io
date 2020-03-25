@@ -190,10 +190,10 @@ header {
 .cta>button {
   color: white;
   background-color: hsl(322, 100%, 66%);
-  padding: 4% 0;
+  padding: 4%;
   margin: 5% auto;
-  width: 50%;
-  font-size: calc(1.5rem + 0.2vw);
+  width: 60%;
+  font-size: calc(1.4rem + 0.2vw);
 }
 
 /* footer */
@@ -247,12 +247,12 @@ footer {
 .ft-icon {
   display: inline-block;
   margin: 1% 2.5% 0 0;
-  width: 2rem;
+  width: 1.5rem;
   vertical-align: top;
 }
 
 .ft-info {
-  font-size: 1.6rem;
+  font-size: calc(1.4rem + 0.2vw);
   display: inline-block;
   max-width: 35rem;
 }
